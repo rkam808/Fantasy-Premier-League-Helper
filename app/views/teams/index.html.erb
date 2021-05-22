@@ -1,0 +1,19 @@
+<!-- Banner -->
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://dailylivescores.com/wp-content/uploads/2020/06/skysports-premier-league-return_5000805.jpg);">
+  <div class="banner-container">
+    <h1>Your Fantasy Teams</h1>
+  </div>
+</div>
+
+<div class="container">
+  <% if @teams.empty? %>
+    <h5>You don't have any Fantasy Teams saved</h5>
+  <% else %>
+    <div class="row">
+      <%= @teams.each do |team| %>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()"><%= team.name %></div>
+      <% end %>
+    </div>
+  <% end %>
+  <%= link_to "Create a new team", new_team_path, class: "btn btn-success" %>
+</div>
