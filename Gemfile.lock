@@ -105,9 +105,12 @@ GEM
     mini_mime (1.1.0)
     minitest (5.14.4)
     msgpack (1.4.2)
+    net (0.3.3)
+      activesupport
     nio4r (2.5.7)
     nokogiri (1.11.5-x86_64-darwin)
       racc (~> 1.4)
+    openssl (2.2.0)
     pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -193,6 +196,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    uri (0.10.1)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -225,6 +229,8 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  net
+  openssl
   pg (>= 0.18, < 2.0)
   pry-byebug
   pry-rails
@@ -237,6 +243,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
+  uri
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
