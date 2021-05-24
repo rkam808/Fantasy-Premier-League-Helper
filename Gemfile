@@ -33,8 +33,6 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 
 gem 'uri'
-gem 'net'
-gem 'openssl'
 
 group :development, :test do
   gem 'pry-byebug'
