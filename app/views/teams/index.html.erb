@@ -10,8 +10,11 @@
     <h5>You don't have any Fantasy Teams saved</h5>
   <% else %>
     <div class="row">
-      <%= @teams.each do |team| %>
-        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()"><%= team.name %></div>
+      <% @teams.each do |team| %>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+          <%= team.name %>
+          <%= link_to "", team_path(team), class: "card-link" %>
+        </div>
       <% end %>
     </div>
   <% end %>

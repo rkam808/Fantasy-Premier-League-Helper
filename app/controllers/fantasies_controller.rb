@@ -7,12 +7,14 @@ class FantasiesController < ApplicationController
   def create
     @team = Team.find(params[:team_id])
     @fantasy = Fantasy.new(fantasy_params)
-    @fantasy.team_id = @team.team_id
+    @fantasy.team_id = @team.id
     @fantasy.player_id = params[:fantasy][:player_id].to_i
     if @fantasy.save
-      redirect_to team_path(@fantasy.team_id)
+      redirect_to new_team_fantasy_path
+      # redirect_to team_path(@fantasy.team_id)
     else
       render :new
+    end
   end
 
   def destroy

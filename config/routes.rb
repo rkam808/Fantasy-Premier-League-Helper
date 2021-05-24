@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   root to: 'clubs#index'
 
   resources :teams do
-    resources :fantasy, only: [:new, :create]
+    resources :fantasies, only: [:new, :create]
   end
-  resources :fantasy, only: [:destroy]
+  resources :fantasies, only: [:destroy]
 
   resources :clubs, only: [:index, :show]
 end

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row" id="team-selection">
+    <div class="col col-8">
+      <h5>Your Team</h5>
+      <div class="row" id="goalkeeper">
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+          Pick a Keeper
+          <%= link_to "", new_team_fantasy_path(params[:id]), class: "card-link" %>
+        </div>
+
+        <%#= link_to render 'shared/modal_form', class: "card-link" %>
+      </div>
+      <div class="row" id="defenders">
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Defender</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Defender</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Defender</div>
+      </div>
+      <div class="row" id="midfielders">
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Midfielder</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Midfielder</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Midfielder</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Midfielder</div>
+      </div>
+      <div class="row" id="forwards">
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Forward</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Forward</div>
+        <div class="card-category col-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">Pick a Forward</div>
+      </div>
+    </div>
+    <div class="col col-4">
+      <h5>Points</h5>
+
+    </div>
+  </div>
+</div>
